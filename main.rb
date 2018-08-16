@@ -1,3 +1,5 @@
+require 'colorize'
+
 def puts_git(cmd)
   puts 'git #{cmd} -h'
   menu
@@ -5,6 +7,7 @@ end
 
 
 def menu
+  puts 'main menuuu'.colorize(:cyan)
   puts '1: Enter Git Command'
   puts '2: Exit'
   choice = gets.to_i
